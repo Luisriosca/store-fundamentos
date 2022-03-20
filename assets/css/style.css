@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('/assets/Font/webfontkit-20220319-211730/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'patriotbold';
+    src: url('/assets/Font/webfontkit-20220319-211730/patriot-bold-webfont.woff2') format('woff2'),
+         url('/assets/Font/webfontkit-20220319-211730/patriot-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'patriotlight';
+    src: url('/assets/Font/webfontkit-20220319-211730/patriot-light-webfont.woff2') format('woff2'),
+         url('/assets/Font/webfontkit-20220319-211730/patriot-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'patriotregular';
+    src: url('/assets/Font/webfontkit-20220319-211730/patriot-regular-webfont.woff2') format('woff2'),
+         url('/assets/Font/webfontkit-20220319-211730/patriot-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'patriotultrabold';
+    src: url('/assets/Font/webfontkit-20220319-211730/patriot-ultrabold-webfont.woff2') format('woff2'),
+         url('/assets/Font/webfontkit-20220319-211730/patriot-ultrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'patriotbold';
+    src: url('/assets/Font/webfontkit-20220319-211730/patriot-bold-webfont.woff2') format('woff2'),
+         url('/assets/Font/webfontkit-20220319-211730/patriot-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --ghost-white: #f7f7ffff;
+    --spring-green: #5efc8dff;
+    --middle-purple: #d87cacff;
+    --phthalo-green: #091e05ff;
+    --jet: #373737ff;
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--spring-green);
+}
+header{
+    padding: 16px;
+    text-align: center;
+    background-color: var(--jet);
+    font-size: 25px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--jet);
+}
+
+nav a{
+    color: var(--ghost-white);
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 30%;
+    padding: 20px;
+    background-color: var(--ghost-white);
+}
+
+section{
+    flex: 70%;
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--jet);
+}
+.products{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 350px;
+    margin: 16px;
+    background-color: var(--ghost-white);
+    border-radius: 15px;
+}
+.product > *{
+    margin: 0;
+    padding: 5px;
+}
+
+button{
+    background-color: var(--middle-purple);
+    color: var(--jet);
+    border: none;
+    border-radius: inherit;
+}
+button:hover{
+    background-color: var(--ghost-white);
+    color: var(--jet);
+    border: var(--jet) 1px solid;
+    border-radius: inherit;
+}
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.product-cart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--ghost-white);
+    background-color: var(--jet);
+    width: 550px;
+    gap: 5px;
+    padding: 0 15px;
+}
+.product-img{
+    width: 250px;
+    /* height: 250px; */
+    border: var(--spring-green) 2px solid;
+    border-radius: inherit;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.img-cart{
+    width: 50px;
+}
+/*  !Media-queries  */
+
+@media screen and (max-width: 500px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 290px;
+        margin: 5px;
+        background-color: var(--ghost-white);
+        border-radius: 15px;
+    }
+    .product > *{
+        margin:0;
+        padding: 5px;
+    }
+    .product-img{
+        width: 150px;
+        border-radius: inherit;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* !General porpuose */
+.font-patriot-bold{
+    font-family: 'patriotbold';
+}
+.txt-color-white{
+    color: var(--ghost-white);
+}
+.txt-color-black{
+    color: var(--jet);
+}
+.txt-color-green{
+    color: var(--spring-green);
+}

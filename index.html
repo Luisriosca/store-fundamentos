@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Layout store</title>
+</head>
+<body>
+    
+    <header>
+        <h1 class="font-patriot-bold txt-color-green">DEGRADADO</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tienda</a>
+        <a href="#">Sobre nosotros</a>
+    </nav>
+
+    <div id="wrapper" class="row">
+<!-- ------------------------------------------- -->
+        <aside id="carrito">
+            <h2 class="title font-patriot-bold txt-color-black">
+                CARRITO
+            </h2>
+            <p>Tu orden de compra incluye: <span id="count"> items</span> </p>
+            <div id="cart" class="cart">
+                
+            </div>
+        </aside>
+<!-- ------------------------------------------- -->
+        <section>
+            <h2 id="tienda" class="font-patriot-bold txt-color-black">TIENDA</h2>
+            <h3 class="font-patriot-bold txt-color-black">
+                PRODUCTOS: <span id="count"></span>
+            </h3>
+            <div class="products" id="products-container">
+
+            </div>
+        </section>
+<!-- ------------------------------------------- -->
+    </div>
+
+    <footer>
+        <h3 class="txt-color-white font-patriot-bold">HECHO CON 💗 PARA EL MODULO DE FUNDAMENTOS</h3>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
